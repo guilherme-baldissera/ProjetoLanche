@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hamburgueria</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Hamburgueria</h1>
+			<p>Bem vindo! Escolha o hamburguer que tem mais a ver com você.</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h2 class="panel-title">Seu Hamburguer</h2>
+					</div>
+					<div class="panel-body">
+						<img src="img/lanche.png" class="img-thumbnail img-responsive">
+						<dl>
+							<dt>Ingredientes</dt>
+							<dd id="ingredientesAlface" style="visibility:hidden;">Alface</dd>
+							<dd id="ingredientesBacon" style="visibility:hidden;">Bacon</dd>
+							<dd id="ingredientesHamburguer" style="visibility:hidden;">Hamburguer</dd>
+							<dd id="ingredientesOvo" style="visibility:hidden;">Ovo</dd>
+							<dd id="ingredientesQueijo" style="visibility:hidden;">Queijo</dd>
+							<dt>Valor</dt>
+							<dd>
+								R$ <span id="Preco"> </span>
+							</dd>
+							<button id="Finaliza" type="button" class="btn btn-primary btn-lg pull-right" name="name" disabled="true">
+								<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+								Calcular Pedido
+							</button>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<form class="cool-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<fieldset>
+							<legend>
+								<button id="personalizado" type="button" class="btn btn-primary btn-lg pull-right" name="personalizado">
+									Monte seu lanche
+								</button>
+							</legend>
+							<div class="form-group">
+								<label for=alface> Alface </label>
+								<input type="number" class="form-control" id="alface" name="alface" autofocus disabled="true">
+							</div>
+							<div class="form-group">
+								<label for=bacon> Bacon </label>
+								<input type="number" class="form-control" id="bacon" name="bacon" disabled="true">
+							</div>
+							<div class="form-group">
+								<label for=hamburguer> Hamburguer </label>
+								<input type="number" class="form-control" id="hamburguer" name="hamburguer" disabled="true">
+							</div>
+							<div class="form-group">
+								<label for=ovo> Ovo </label>
+								<input type="number" class="form-control" id="ovo" name="ovo" disabled="true">
+							</div>
+							<div class="form-group">
+								<label for=queijo> Queijo </label>
+								<input type="number" class="form-control" id="queijo" name="queijo" disabled="true">
+							</div>
+						</fieldset>
+					</div>
+				</div>
+			</form>
+			<form class="cool-sm-4" style="padding-left: 150px">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<fieldset>
+							<legend>
+								<button id="cardapio" type="button" class="btn btn-primary btn-lg pull-right" name="cardapio">
+									Escolha seu lanche
+								</button>
+							</legend>
+							<div class="form-group">
+								<label for="lanche"> Abaixo seguem as opções de lanches existentes </label>
+								<select name="lanche" id="lanche_select" class="form-control" disabled="true">
+									<option value="" selected disabled> Selecione seu lanche</option>
+									<option value="1"> X-Bacon </option>
+									<option value="2"> X-Burguer </option>
+									<option value="3"> X-Egg </option>
+									<option value="4"> X-EggBacon </option>
+								</select>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="index.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+</body>
+
+</html>

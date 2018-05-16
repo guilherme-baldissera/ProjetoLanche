@@ -1,0 +1,6 @@
+Instruções para executar a API
+
+1. Abrir o CMD(windows) ou terminal(linux ou mac);
+2. Acessar o diretório ProjetoLanches/API/lanches;
+3. Executar o comando : mvn clean  install spring-boot:run;
+4. Executar projeto web: No diretório ProjetoLanches/APP/lanches executar o index.html com Google Chrome;
